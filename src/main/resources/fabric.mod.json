@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "allne3is",
+  "version": "${version}",
+  "name": "Allne3is Target Health",
+  "description": "Показує здоров'я останнього суперника під прицілом.",
+  "authors": [
+    "Me!"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+  "license": "CC0-1.0",
+  "icon": "assets/allne3is/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.example.client.Allne3isclient"
+    ]
+  },
+  "mixins": [
+    "allne3is.mixins.json",
+    {
+      "config": "allne3is.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.3",
+    "minecraft": "~26.2",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}
